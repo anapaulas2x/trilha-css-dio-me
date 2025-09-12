@@ -116,20 +116,22 @@ p {
 }
 
 #transform-world {
-  height: 560px;
+  height: auto;
   background-size: cover; 
   background-image: url('./assets/woman-code.png');
   background-attachment: fixed;
   border-top: 1px solid #33A8DB80;
   border-bottom: 1px solid #33A8DB80;
-  padding: 200px;
+  padding: 5.2rem;
+  display: flex;
 }
 
 #transform-world p {
   font-weight: 900;
+  display: flex;
   font-size: 2.5rem;
   text-transform: lowercase;
-  max-width: 250px;
+  max-width: 2.5rem;
   text-shadow: 3px 2px #33A8DB;
 }
 
@@ -141,7 +143,7 @@ p {
 #professional-challenges h2 {
   text-align: center;
   margin-top: 5.2rem;
-  font-size: 2.0rem;
+  font-size: 1.0rem;
 
 }
 
