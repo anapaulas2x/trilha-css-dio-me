@@ -41,7 +41,7 @@ linear-gradient(
   align-items: center;
 }
 h1{
-font-size: 2.5rem;
+font-size: 2rem;
  font-weight: 900;
  text-transform: uppercase;
  color: transparent; 
@@ -52,7 +52,7 @@ background-clip: text;
 }
 
 p{
- font-size: 1.25rem;
+ font-size: 1rem;
  margin: 16px 0 24px; 
 }
 button {
@@ -74,17 +74,21 @@ button {
 }
 
 #course-content{
-  margin: 5.2rem;
+    width: 90%;
+  max-width: 400px;
+  margin: 0 auto; 
 }
 
 #course-content .module-list {
   color: white;
   font-family:Arial, Helvetica, sans-serif;
-  width: 530px;
-  margin: 0 auto 24px; 
+  width: 100%;
   border: 1px solid #33A8D8; 
   background-color: #252525;
-  padding: 16px;
+  padding: 10px 20px;
+  margin: 0 auto 24px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
   border-radius: 100px;
   box-shadow: inset -5px 6px 8px rgba( 0, 0, 0, .7);
 }
@@ -130,23 +134,29 @@ p {
 }
 
 .professional-challenges{
+
   text-align: center;
   width: 800px;
 }
 #professional-challenges h2 {
   text-align: center;
   margin-top: 5.2rem;
+  font-size: 2.0rem;
 
 }
 
 #professional-challenges img {
  margin: 32px 0;
+ width: 100%;
+ max-width: 600px;
+ height: auto;
+ margin: 0;
 }
 
 #professional-challenges p {
-  font-size: 16px;
+  font-size: 0.9rem;
   text-align: center;
-  margin: 5.2rem;
+  margin: 1.2rem;
 }
 
 
@@ -164,8 +174,28 @@ footer .dio-logo {
 
 }
 
+footer p { 
+  font-size: 0.9rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 footer a {
   color: #31A8DD;
   font-weight: bold;
   text-decoration: none;
+}
+
+/* Ajuste para tablets */
+@media (max-width: 768px){
+body, div, section, main, header, footer{
+   font-size: 2rem;
+   text-align: center; 
+}}
+
+/* Ajuste para celulares*/
+@media (max-width: 480px) {
+  body, div, section, main, header, footer, #course-content.module-list {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
 }
